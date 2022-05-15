@@ -66,17 +66,31 @@ img {
 
 /* section-design */
 
-.container {
+.design__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url('assets/design/design-bg.png');
     background-size: cover;
+    z-index: 1;
+}
+
+.design__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 0;
 }
 
 .design__title {
+    position: relative;
     font-family: "Raleway", sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -85,12 +99,21 @@ img {
     padding-top: 57px;
     padding-bottom: 57px;
     margin-bottom: 40px;
+    z-index: 2;
 }
 
-hr {
-    height: 1px;
+.design__title::after {
+    content: "";
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    position: absolute;
     width: 170px;
-    border: 1px solid #fff;
+    height: 1px;
+    background: currentColor;
+    z-index: 3;
 }
 
 .design__subtitle {
@@ -99,6 +122,7 @@ hr {
     font-weight: 400;
     color: #fff;
     margin-bottom: 73px;
+    z-index: 4;
 }
 
 .design__link {
@@ -112,4 +136,5 @@ hr {
     padding-bottom: 20px;
     width: 370px;
     margin: 0 auto;
+    z-index: 5;
 }
