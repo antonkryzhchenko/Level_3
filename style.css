@@ -563,6 +563,7 @@ hr {
 }
 
 svg path:hover {
+    transition: 0.3s;
     fill: #EC7979;
 }
 
