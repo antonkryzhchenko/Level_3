@@ -16,6 +16,16 @@ a {
     color: #fff;
 }
 
+.wrapper-full {
+    max-width: 1510px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 /* header  */
 
 .header {
@@ -96,6 +106,7 @@ a {
 }
 
 .promo__title {
+    max-width: 670px;
     font-family: "Raleway", sans-serif;
     font-size: 48px;
     font-weight: 500;
@@ -120,6 +131,7 @@ a {
 }
 
 .promo__subtitle {
+    max-width: 270px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -218,14 +230,12 @@ hr {
 .social__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
-.social__title {
-    margin-left: 170px;
-}
-
 .social__subtitle {
+    max-width: 470px;
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -235,25 +245,25 @@ hr {
 }
 
 .social_text {
+    max-width: 470px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
     color: #86878B;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .social__img {
     width: 70px;
     height: 70px;
-    margin-left: 35px;
-}
-
-.social__images {
     margin-left: 30px;
 }
 
+.social__img:nth-child(1) {
+    margin-left: 0px;
+}
 /* section-benefits */
 
 .benefits__container {
@@ -328,6 +338,7 @@ hr {
 }
 
 .benefits__card-descr {
+    max-width: 370px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -338,12 +349,15 @@ hr {
 
 /* section pricing */
 
+.pricing {
+    background: #F5F5F5;
+}
+
 .pricing__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background: #F5F5F5;
     padding-top: 50px;
     padding-bottom: 50px;
 }
