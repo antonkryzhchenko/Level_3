@@ -48,14 +48,19 @@ img {
     margin: 0 -15px;
 }
 
+.col-4 {
+    margin: 0 auto;
+    width: calc(100% / 12 * 4 - 30px);
+}
+
 .col-5 {
     margin: 0 auto;
     width: calc(100% / 12 * 5 - 30px);
 }
 
-.col-4 {
+.col-6 {
     margin: 0 auto;
-    width: calc(100% / 12 * 4 - 30px);
+    width: calc(100% / 12 * 6 - 30px);
 }
 
 .col-7 {
@@ -97,6 +102,27 @@ img {
     text-align: center;
     color: #86878B;
     margin-bottom: 71px;
+}
+
+.section-form__inputs {
+    margin-top: 45px;
+    margin-bottom: 75px;
+}
+
+.section-form__input {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    width: 370px;
+    font-size: 14px;
+    color: #BDBDBD;
+    outline: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 33px;
+    padding-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
 }
 
 .button-outline {
@@ -257,27 +283,6 @@ img {
 
 .promo__form-colortext {
     color: #EC7979;
-}
-
-.promo__form-inputs {
-    margin-top: 45px;
-    margin-bottom: 75px;
-}
-
-.promo__form-input {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    width: 370px;
-    font-size: 14px;
-    color: #BDBDBD;
-    outline: none;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 33px;
-    padding-bottom: 16px;
-    border: none;
-    border-bottom: 1px solid #BDBDBD;
 }
 
 .promo__form-input:first-child {
@@ -546,6 +551,51 @@ img {
     display: block;
     margin: 0 auto;
     width: 370px;
+}
+
+/* section contact */
+
+.contact__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__form-inputs {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.contact__input {
+    min-width: 570px;
+    padding-top: 50px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.contact__input:first-child {
+    padding-top: 0;
+}
+
+.contact__textarea {
+    height: 200px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.contact__button {
+    display: inline-block;
+    margin: 0 auto;
+    width: 370px;
+    height: 58px;
+    margin-bottom: 50px;
+}
+
+.contact__button:hover {
+    background: #AB4949;
+    transition: 0.3s;
 }
 
 /* footer start*/
