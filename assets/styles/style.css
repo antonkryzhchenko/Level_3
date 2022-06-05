@@ -1,4 +1,4 @@
-/* :default */
+/* default */
 * {
     box-sizing: border-box;
 }
@@ -33,7 +33,7 @@ img {
     --gutter: 20px;
 }
 
-/* Component Start */
+/* components start */
 
 .container {
     margin-left: 15px;
@@ -66,6 +66,11 @@ img {
 .col-7 {
     margin: 0 auto;
     width: calc(100% / 12 * 7 - 30px);
+}
+
+.col-12 {
+    margin: 0 auto;
+    width: calc(100% / 12 * 12 - 30px);
 }
 
 .section-head__title {
@@ -154,9 +159,9 @@ img {
     cursor: pointer;
 }
 
-/* Component End */
+/* components end */
 
-/* header  */
+/* header start */
 
 .header {
     background: #000000;
@@ -191,9 +196,11 @@ img {
     text-decoration: none;
 }
 
-/* sections */
+/* header end */
 
-/* section-promo start*/
+/* Sections */
+
+/* section promo start*/
 
 .promo {
     background-image: url('/assets/images/promo/bg-promo.png');
@@ -299,7 +306,9 @@ img {
     transition: 0.3s;
 }
 
-/* section-social */
+/* section promo end */
+
+/* section social */
 
 .social {
     background: #F8EFEF;
@@ -343,7 +352,95 @@ img {
     margin-left: 0;
 }
 
-/* section-benefits */
+/* section social end */
+
+/* section tabs start */
+
+.tabs__container {
+    margin: 0 auto;
+}
+
+.tabs__container>input[type="radio"] {
+    display: none;
+}
+
+.tabs__container>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab__btn-1:checked~#tabs__content-1, #tab__btn-2:checked~#tabs__content-2, #tab__btn-3:checked~#tabs__content-3 {
+    display: block;
+}
+
+.tabs__container>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 10px 65px 10px 65px;
+    margin-top: 100px;
+    line-height: 19px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+
+.tabs__btn {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tabs__container>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs__container>input[type="radio"]:checked+label {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tabs__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs__content-title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+}
+
+.tabs__content-desc {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.tabs__content-btn {
+    margin-top: 27px;
+}
+
+.tabs__content-btn:hover {
+    background: #AB4949;
+    transition: 0.3s;
+}
+
+/* section tabs end */
+
+/* section benefits start*/
 
 .benefits__card {
     display: flex;
@@ -377,7 +474,9 @@ img {
     margin-bottom: 58px;
 }
 
-/* section pricing */
+/* section benefits end */
+
+/* section pricing start*/
 
 .pricing {
     background: #F5F5F5;
@@ -449,7 +548,9 @@ img {
     cursor: pointer;
 }
 
-/* section reviews */
+/* section pricing end */
+
+/* section reviews start */
 .reviews__card {
     margin-bottom: 64px;
 }
@@ -511,7 +612,9 @@ img {
     line-height: 21px;
 }
 
-/* section-design */
+/* section reviews end */
+
+/* section design start*/
 
 .design {
     position: relative;
@@ -553,7 +656,9 @@ img {
     width: 370px;
 }
 
-/* section contact */
+/* section design end */
+
+/* section contact start*/
 
 .contact__form {
     display: flex;
@@ -597,6 +702,8 @@ img {
     background: #AB4949;
     transition: 0.3s;
 }
+
+/* section contact end */
 
 /* footer start*/
 
