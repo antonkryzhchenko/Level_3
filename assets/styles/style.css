@@ -240,7 +240,6 @@ img {
     position: relative;
     padding-bottom: 55px;
     color: #ffffff;
-    z-index: 2;
 }
 
 .promo__title::after {
@@ -267,6 +266,7 @@ img {
 }
 
 .promo__form {
+    position: relative;
     display: flex;
     align-self: flex-start;
     position: relative;
@@ -305,6 +305,40 @@ img {
     background: #AB4949;
     transition: 0.3s;
 }
+
+/* promo modal window start */
+
+.promo__modal {
+    position: relative;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.promo__modal-form {
+    margin-left: 0;
+    margin: 0 auto;
+    transform: translateY(40%);
+    
+}
+
+.promo__modal_close {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: #EC7979;
+    font-size: 72px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* promo modal window end */
 
 /* section promo end */
 

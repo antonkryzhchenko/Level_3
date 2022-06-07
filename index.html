@@ -38,7 +38,24 @@
                     </div>
                     <h1 class="promo__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                     <p class="promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <button class="button-outline promo__button" type="button">Download</button>
+                    <button id="promo__modal-button" class="button-outline promo__button" type="button">Download</button>
+                    <!-- Modal window start -->
+                        <div id="promo__modal-window" class="promo__modal">
+                            <div class="promo__form promo__modal-form">
+                                <span class="promo__modal_close">&times;</span>
+                                <form class="promo__form-elements">
+                                    <p class="promo__form-title">Registration</p>
+                                    <div class="section-form__inputs">
+                                        <input class="section-form__input" type="text" placeholder="Name">
+                                        <input class="section-form__input" type="email" placeholder="Email">
+                                        <input class="section-form__input" type="password" placeholder="Password">
+                                        <input class="section-form__input" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Phone">
+                                    </div>
+                                    <button class="button-prime promo__form-btn" type="button">REGISTER</button>
+                                </form>
+                            </div>
+                        </div>
+                    <!-- Modal window end -->
                 </div>
                     <div class="promo__form col-5">
                         <form class="promo__form-elements">
@@ -300,5 +317,6 @@
                 <p class="footer__copyright">© 2015 Axure Themes</p>
         </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
