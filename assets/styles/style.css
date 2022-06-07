@@ -203,7 +203,7 @@ img {
 /* section promo start*/
 
 .promo {
-    background-image: url('/assets/images/promo/bg-promo.png');
+    background-image: url('../images/promo/bg-promo.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -653,7 +653,7 @@ img {
 
 .design {
     position: relative;
-    background-image: url('/assets/images/design/design-bg.png');
+    background-image: url('../images/design/design-bg.png');
     background-size: cover;
     padding-bottom: 50px;
     padding-top: 50px;
