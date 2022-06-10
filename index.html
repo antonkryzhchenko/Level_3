@@ -16,13 +16,25 @@
         <div class="container">
             <div class="header__inner">
                 <img class="header__logo" src="./assets/images/header/logo.svg" alt="axit">
-                <nav>
+                <nav class="header__nav">
                     <ul class="header__menu">
+                        <li class="header__menu-item"><a href="#!" class="header__menu-link">Features</a>
+                            <ul class="header__submenu">
+                                <li class="header__submenu-item"><a href="" class="header__submenu-link">Feature_1</a></li>
+                                <li class="header__submenu-item"><a href="" class="header__submenu-link">Feature_2</a>
+                                <ul class="header__secondsubmenu">
+                                    <li class="header__secondsubmenu-item"><a href="" class="header__secondsubmenu-link">Menu_1</a></li>
+                                    <li class="header__secondsubmenu-item"><a href="" class="header__secondsubmenu-link">Menu_2</a></li>
+                                    <li class="header__secondsubmenu-item"><a href="" class="header__secondsubmenu-link">Menu_3</a></li>
+                                </ul>
+                                </li>
+                                <li class="header__submenu-item"><a href="" class="header__submenu-link">Feature_3</a></li>
+                            </ul>
+                        </li>
                         <li class="header__menu-item"><a href="#!" class="header__menu-link">About</a></li>
                         <li class="header__menu-item"><a href="#!" class="header__menu-link">Pricing</a></li>
                         <li class="header__menu-item"><a href="#!" class="header__menu-link">Reviews</a></li>
                         <li class="header__menu-item"><a href="#!" class="header__menu-link">Contact</a></li>
-                        <li class="header__menu-item"><a href="#!" class="header__menu-link">Features</a></li>
                     </ul>
                 </nav>
             </div>
@@ -48,6 +60,7 @@
                                     <div class="section-form__inputs">
                                         <input class="section-form__input" type="text" placeholder="Name">
                                         <input class="section-form__input" type="email" placeholder="Email">
+
                                         <input class="section-form__input" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Phone">
                                     </div>
                                     <button class="button-prime promo__form-btn" type="button">REGISTER</button>
