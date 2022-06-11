@@ -1,7 +1,7 @@
 // promo modal window start
-var modalWindow = document.getElementById('promo__modal-window');
+var modalWindow = document.getElementById('modal-window');
 var button = document.getElementById('promo__modal-button');
-var cross = document.getElementsByClassName("promo__modal_close")[0];
+var cross = document.getElementsByClassName("modal-close")[0];
 
 button.onclick = function () {
     modalWindow.style.display = "block";

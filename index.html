@@ -18,7 +18,7 @@
                 <img class="header__logo" src="./assets/images/header/logo.svg" alt="axit">
                 <nav class="header__nav">
                     <ul class="header__menu">
-                        <li class="header__menu-item"><a href="#!" class="header__menu-link">Features</a>
+                        <li class="header__menu-item header__menu-item_has-child"><a href="#!" class="header__menu-link">Features</a>
                             <ul class="header__submenu">
                                 <li class="header__submenu-item"><a href="" class="header__submenu-link">Feature_1</a></li>
                                 <li class="header__submenu-item"><a href="" class="header__submenu-link">Feature_2</a>
@@ -51,31 +51,14 @@
                     <h1 class="promo__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                     <p class="promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <button id="promo__modal-button" class="button-outline promo__button" type="button">Download</button>
-                    <!-- Modal window start -->
-                        <div id="promo__modal-window" class="promo__modal">
-                            <div class="promo__form promo__modal-form">
-                                <span class="promo__modal_close">&times;</span>
-                                <form class="promo__form-elements">
-                                    <p class="promo__form-title">Registration</p>
-                                    <div class="section-form__inputs">
-                                        <input class="section-form__input" type="text" placeholder="Name">
-                                        <input class="section-form__input" type="email" placeholder="Email">
-
-                                        <input class="section-form__input" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Phone">
-                                    </div>
-                                    <button class="button-prime promo__form-btn" type="button">REGISTER</button>
-                                </form>
-                            </div>
-                        </div>
-                    <!-- Modal window end -->
                 </div>
                     <div class="promo__form col-5">
                         <form class="promo__form-elements">
-                            <p class="promo__form-title">TRY YOUR <span class="promo__form-colortext">FREE</span> TRIAL TODAY</p>
-                            <div class="section-form__inputs">
-                                <input class="section-form__input" type="text" placeholder="Name">
-                                <input class="section-form__input" type="email" placeholder="Email">
-                                <input class="section-form__input" type="password" placeholder="Password">
+                            <p class="promo__form-title">TRY YOUR <span class="color-prime">FREE</span> TRIAL TODAY</p>
+                            <div class="promo__inputs">
+                                <input class="promo__input form-input" type="text" placeholder="Name">
+                                <input class="promo__input form-input" type="email" placeholder="Email">
+                                <input class="promo__input form-input" type="password" placeholder="Password">
                             </div>
                             <button class="button-prime promo__form-btn" type="button">Get Started</button>
                         </form>
@@ -106,51 +89,49 @@
 
     <section class="tabs">
         <div class="container">
-            <div class="row">
-                <div class="tabs__container col-12">
-                    <input type="radio" name="tab__btn" id="tab__btn-1" value="" checked>
-                    <label class="tabs__btn" for="tab__btn-1">TAB 1</label>
-                    <input type="radio" name="tab__btn" id="tab__btn-2" value="">
-                    <label class="tabs__btn" for="tab__btn-2">TAB 2</label>
-                    <input type="radio" name="tab__btn" id="tab__btn-3" value="">
-                    <label class="tabs__btn" for="tab__btn-3">TAB 3</label>
-                    <div id="tabs__content-1">
-                        <div class="tabs__content">
-                            <div class="tabs__content-info col-6">
-                            <p class="tabs__content-title">Tabs with soft transitioning effect.</p>
-                            <p class="tabs__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                            <button class="button-prime tabs__content-btn" type="button">Download</button>
-                            </div>
-                            <div class="tabs__content-img col-5">
-                                <img src="./assets/images/tabs/tab-1.png" alt="pic-1">
-                            </div>
+            <div class="tabs__container">
+                <input type="radio" name="tab__btn" id="tab__btn-1" value="" checked>
+                <label class="tabs__btn" for="tab__btn-1">TAB 1</label>
+                <input type="radio" name="tab__btn" id="tab__btn-2" value="">
+                <label class="tabs__btn" for="tab__btn-2">TAB 2</label>
+                <input type="radio" name="tab__btn" id="tab__btn-3" value="">
+                <label class="tabs__btn" for="tab__btn-3">TAB 3</label>
+                <div id="tabs__content-1">
+                    <div class="tabs__content">
+                        <div class="tabs__content-info">
+                        <p class="tabs__content-title">Tabs with soft transitioning effect.</p>
+                        <p class="tabs__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <button class="button-prime tabs__content-btn" type="button">Download</button>
                         </div>
+                        <div class="tabs__content-img">
+                            <img src="./assets/images/tabs/tab-1.png" alt="pic-1">
+                        </div>
+                    </div>
                     </div>
                     <div id="tabs__content-2">
                         <div class="tabs__content">
-                            <div class="tabs__content-info col-6">
+                            <div class="tabs__content-info">
                             <p class="tabs__content-title">Tabs with soft transitioning effect.</p>
                             <p class="tabs__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                             <button class="button-prime tabs__content-btn" type="button">Download</button>
                             </div>
-                            <div class="tabs__content-img col-5">
+                            <div class="tabs__content-img">
                                 <img src="./assets/images/tabs/tab-2.png" alt="pic-2">
                             </div>
                         </div>
                     </div>
                     <div id="tabs__content-3">
                         <div class="tabs__content">
-                            <div class="tabs__content-info col-6">
+                            <div class="tabs__content-info">
                             <p class="tabs__content-title">Tabs with soft transitioning effect.</p>
                             <p class="tabs__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                             <button class="button-prime tabs__content-btn" type="button">Download</button>
                             </div>
-                            <div class="tabs__content-img col-5">
+                            <div class="tabs__content-img">
                                 <img src="./assets/images/tabs/tab-3.png" alt="pic-3">
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </section>
@@ -194,7 +175,7 @@
                 <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
                 <div class="row">
-                    <div class="pricing__card col-4">
+                    <div class="pricing__card col-4 pricing__card_active">
                         <p class="pricing__card-title">Basic</p>
                         <p class="pricing__card-cost">$10</p>
                         <p class="pricing__card-desc">Free for life</p>
@@ -216,7 +197,7 @@
                         <p class="pricing__card-space">1 gb of space</p>
                         <p class="pricing__card-space">1 gb of space</p>
                     </div>
-                    <div class="pricing__card col-4">
+                    <div class="pricing__card col-4 pricing__card_active">
                         <p class="pricing__card-title">Pro</p>
                         <p class="pricing__card-cost">$30</p>
                         <p class="pricing__card-desc">Free for life</p>
@@ -233,7 +214,7 @@
 
     <section class="reviews">
         <div class="container">
-                <div class="section-head reviews__head">
+                <div class="section-head">
                     <h2 class="section-head__title">what our customers are saying</h2>
                     <p class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
@@ -275,9 +256,9 @@
 
     <section class="design">
         <div class="container">
-            <div class="section-head">
-                <h2 class="section-head__title design__title">Stylish axure design</h2>
-                <p class="section-head__text design__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+            <div class="section-head section-head_light">
+                <h2 class="section-head__title section-head_light">Stylish axure design</h2>
+                <p class="section-head__text section-head_light">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
             </div>
             <button class="button-outline design__button" type="button">Download</button>
         </div>
@@ -291,10 +272,10 @@
             </div>
             <div class="row">
                 <form class="contact__form">
-                <div class="section-form__inputs contact__form-inputs col-6">
-                    <input class="section-form__input contact__input" type="text" placeholder="Name">
-                    <input class="section-form__input contact__input" type="email" placeholder="Email">
-                    <input class="section-form__input contact__input" type="password" placeholder="Password">
+                <div class="contact__form-inputs col-6">
+                    <input class="contact__input form-input" type="text" placeholder="Name">
+                    <input class="contact__input form-input" type="email" placeholder="Email">
+                    <input class="contact__input form-input" type="password" placeholder="Password">
                 </div>
                 <div class="contact__form-textarea col-6">
                     <textarea class="contact__textarea" name="Message" placeholder="Message"></textarea>
@@ -305,6 +286,23 @@
             
         </div>
     </section>
+
+    <!-- Modal window start -->
+    <div id="modal-window" class="modal">
+        <div class="modal__content">
+            <form class="modal__content-elements">
+                <span class="modal-close">&times;</span>
+                <p class="modal__content-title">Registration</p>
+                <div class="modal-inputs">
+                    <input class="form-input" type="text" placeholder="Name">
+                    <input class="form-input" type="email" placeholder="Email">
+                    <input class="form-input" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Phone">
+                </div>
+                <button class="button-prime modal__content-btn" type="button">REGISTER</button>
+            </form>
+        </div>
+    </div>
+<!-- Modal window end -->
 
     <footer class="footer">
         <div class="container">
