@@ -169,7 +169,15 @@ img {
 /* header start */
 
 .header {
-    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header_has-bg {
+    background: var(--text-color);
 }
 
 .header__inner {
