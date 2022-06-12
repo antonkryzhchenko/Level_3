@@ -1,6 +1,12 @@
 /* default */
 
 :root {
+    --accentcolor: #EC7979;
+    --button-hover-color: #AB4949;
+    --text-color: #86878B;
+    --pricing-bg-color: #F5F5F5;
+    --reviews-card-bg-color: #E2E2E2;
+    --social-bg-color: #F8EFEF;
     --content-width: 1170px;
     --mobile-padding: 16px;
     --gutter: 15px;
@@ -40,13 +46,13 @@ img {
     margin-left: 15px;
     margin-right: 15px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: calc(var(--content-width) + var(--mobile-padding) * 2);
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 - var(--gutter);
 }
 
 .col-4 {
@@ -97,7 +103,7 @@ img {
     position: absolute;
     width: 170px;
     height: 1px;
-    background: #EC7979;
+    background: var(--accentcolor);
 }
 
 .section-head__text {
@@ -105,7 +111,7 @@ img {
     font-size: 18px;
     font-weight: 400;
     text-align: center;
-    color: #86878B;
+    color: var(--text-color);
     margin-bottom: 71px;
 }
 
@@ -145,7 +151,7 @@ img {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    background: #EC7979;
+    background: var(--accentcolor);
     border: none;
     color: #fff;
     padding-top: 20px;
@@ -155,7 +161,7 @@ img {
 }
 
 .color-prime {
-    color: #EC7979;
+    color: var(--accentcolor);
 }
 
 /* components end */
@@ -200,8 +206,8 @@ img {
     vertical-align: middle;
     width: 8px;
     height: 8px;
-    border-bottom: 3px solid #EC7979;
-    border-right: 3px solid #EC7979;
+    border-bottom: 3px solid var(--accentcolor);
+    border-right: 3px solid var(--accentcolor);
     margin-left: 10px;
     transform: rotate(45deg);
 }
@@ -224,7 +230,7 @@ img {
     padding: 10px;
     display: none;
     list-style: none;
-    background-color: #EC7979;
+    background-color: var(--accentcolor);
     border-radius: 10px;
     z-index: 2;
     transform: translateX(-10%);
@@ -245,7 +251,7 @@ img {
     display: none;
     position: absolute;
     padding: 10px;
-    background-color: #EC7979;
+    background-color: var(--accentcolor);
     border-radius: 10px;
     top: 24%;
     left: 110%;
@@ -364,7 +370,7 @@ img {
 }
 
 .promo__form-btn:hover {
-    background: #AB4949;
+    background: var(--button-hover-color);
     transition: 0.3s;
 }
 
@@ -373,7 +379,7 @@ img {
 /* section social */
 
 .social {
-    background: #F8EFEF;
+    background: var(--social-bg-color);
 }
 
 .social__subtitle {
@@ -390,7 +396,7 @@ img {
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    color: #86878B;
+    color: var(--text-color);
     padding-top: 18px;
     padding-bottom: 18px;
 }
@@ -502,7 +508,7 @@ img {
 }
 
 .tabs__content-btn:hover {
-    background: #AB4949;
+    background: var(--button-hover-color);
     transition: 0.3s;
 }
 
@@ -551,7 +557,7 @@ img {
 .pricing {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: #F5F5F5;
+    background: var(--pricing-bg-color);
 }
 
 .pricing__card {
@@ -611,7 +617,7 @@ img {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    color: #86878B;
+    color: var(--text-color);
     background: #ffffff;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -631,7 +637,7 @@ img {
 .reviews__card-text {
     position: relative;
     max-width: 370px;
-    background: #E2E2E2;
+    background: var(--reviews-card-bg-color);
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -646,7 +652,7 @@ img {
     content: '';
     border-style: solid;
     border-width: 20px 15px 0 15px;
-    border-color: #e2e2e2 transparent transparent transparent;
+    border-color: var(--reviews-card-bg-color) transparent transparent transparent;
     position: absolute;
     bottom: 0%;
     transform: translateY(100%);
@@ -764,7 +770,7 @@ img {
 }
 
 .contact__button:hover {
-    background: #AB4949;
+    background: var(--button-hover-color);
     transition: 0.3s;
 }
 
@@ -805,7 +811,7 @@ img {
     position: absolute;
     right: 0;
     margin-right: 20px;
-    color: #EC7979;
+    color: var(--accentcolor);
     font-size: 72px;
     font-weight: bold;
     cursor: pointer;
@@ -834,7 +840,7 @@ img {
 }
 
 .modal__content-btn:hover {
-    background: #AB4949;
+    background: var(--button-hover-color);
     transition: 0.3s;
 }
 
@@ -862,7 +868,7 @@ img {
 
 svg:hover path {
     transition: 0.3s;
-    fill: #EC7979;
+    fill: var(--accentcolor);
 }
 
 .footer__copyright {
